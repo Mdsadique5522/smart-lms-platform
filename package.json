@@ -1,0 +1,34 @@
+{
+  "name": "student-progress-tracking",
+  "version": "1.0.0",
+  "description": "Event-driven student progress tracking system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "client": "cd frontend && npm start",
+    "devall": "concurrently \"npm run dev\" \"npm run client\"",
+    "setup": "node setup-env.js",
+    "seed": "node backend/scripts/seed.js"
+  },
+  "keywords": [
+    "mern",
+    "education",
+    "progress-tracking"
+  ],
+  "author": "Md sadique",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
